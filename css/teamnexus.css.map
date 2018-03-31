@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/teamnexus.scss"
+    ],
+    "names": [],
+    "file": "teamnexus.css"
+}
