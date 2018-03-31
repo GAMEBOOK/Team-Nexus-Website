@@ -14,4 +14,4 @@
 
 ## Quick Links
 > - Join our Team Nexus's Discord here: https://discord.gg/bKNWxcq
-  - Visit the Shotbow Network Site here: https://shotbow.net
+>  - Visit the Shotbow Network Site here: https://shotbow.net
