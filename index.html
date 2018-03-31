@@ -28,9 +28,9 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
   <div id="navbar">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Team
         <span>Nexus</span>
       </a>
@@ -89,40 +89,51 @@
   </div>
   <div id="about">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>About Team Nexus.</h1>
-          <hr>
+
+      <div class="row mt-4">
+        <div class="col-sm-12 col-md-8 align-self-center">
+          <h1>
+            <mark>About Team Nexus.</mark>
+            <hr class="mt-3">
+
+          </h1>
+          <p>Team Nexus is a group, not a clan, comprised of Annihilation, MineZ, HCF, and other members of the Shotbow community.
+            We organize events, share videos, and play together on community hosted events. Discord is our main method of
+            communication. Find new friends, play intense and friendly matches, or just chill out with other Shotbow players
+            with Team Nexus! Join today! </p>
         </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-8">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ad libero soluta provident saepe quo est
-              quidem obcaecati temporibus, totam labore modi et esse harum unde. Explicabo magni necessitatibus veritatis.</p>
-          </div>
-          <div class="col-md-4 d-sm-none">
-            <img src="" alt="Nexus">
-          </div>
+        <div class="col-md-4 d-none d-sm-block align-self-center">
+          <img src="images/endstone.png" alt="Nexus" class="img-fluid mx-auto d-block wow bounceIn">
         </div>
       </div>
     </div>
   </div>
+  </div>
   <div id="features">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>What we offer.</h1>
-          <hr>
+      <div class="row text-center">
+        <div class="col align-self-center">
+          <i class="fas fa-trophy fa-5x"></i>
+          <h1>Events</h1>
+          <p>Team Nexus hosts a plethora of events frequently! These events are either ran by our organizers or community members
+            like you. Furthermore, we aren't limited to only Shotbow games as we will schedule play-times on different servers
+            and games!</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          icon
+        <div class="col align-self-center">
+          <i class="fab fa-youtube fa-5x"></i>
+          <h1>Grow</h1>
+          <p>Share your YouTube, Twitch Livestrams, and other content in our bustling media channel! We encourage you to post
+            your epic Shotbow experiences as well as other gameplay from your favorite network(s). You can also find other
+            YouTubers to collaborate with and find enjoyable content from other members of the community.</p>
         </div>
-        <div class="col">
-          icon
-        </div>
-        <div class="col">
-          icon
+        <div class="col align-self-center">
+
+          <i class="fas fa-users fa-5x"></i>
+
+          <h1>Community Ran</h1>
+          <p>Team Nexus is ran by the community for the community! We encourage members to have an active say in how our server
+            is ran, after all, it is just a bunch of gamers who want to have fun! Connect with clan members from Shotbow
+            and start playing!</p>
         </div>
       </div>
     </div>
@@ -174,6 +185,9 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
   <script>
     new WOW().init();
+  </script>
+  <script>
+    $('body').scrollspy({ target: '#navbar' })
   </script>
 </body>
 
