@@ -112,7 +112,7 @@ hr {
 
 #about {
   .row {
-    min-height: 35vh;
+    min-height: 45vh;
   }
   h1 {
     @include header();
@@ -129,12 +129,15 @@ hr {
   }
 
   h1 {
-    font-weight: 700;
   }
   p {
     color: $primary-color-light;
   }
 }
 // Call-to-Action CSS
-
+#cta {
+  .row {
+    min-height: 25vh;
+  }
+}
 // Footer Css
