@@ -1,18 +1,50 @@
-// Font Family Imports
-// font-family: 'Anton', sans-serif;
-// font-family: 'Source Sans Pro', sans-serif;
-
 // Variable Declarations
-@mixin anton() {
-  font-family: 'Anton', sans-serif;
-}
-@mixin source() {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
+$primary-color-dark: #455a64;
+$primary-color: #607d8b;
+$primary-color-light: #cfd8dc;
+$primary-color-text: #ffffff;
+$accent-color: #ffc107;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #bdbdbd;
 // Begin HTML Styling
 
+// Global CSS
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $primary-text-color;
+}
+
 // Navbar CSS
+.bg-dark {
+  background: $primary-color-dark !important;
+}
+.navbar-brand {
+  border: 1px $accent-color solid;
+  padding: 1%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  span {
+    color: $accent-color;
+  }
+}
+.nav-item {
+  margin: 0 10px;
+  .nav-link {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .btn-outline-primary {
+    border-color: $accent-color;
+  }
+  .btn-outline-primary:hover {
+    background: $accent-color;
+    color: $primary-text-color !important;
+  }
+}
 
 // Hero CSS
 
