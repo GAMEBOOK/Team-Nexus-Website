@@ -13,5 +13,5 @@
 > In the future, the site will utilize the Discord API to create both a thorough list of members and their ranks as well as the developement and deployment of a Discord bot built for the server.
 
 ## Quick Links
-> - Join our Team Nexus's Discord here: https://discord.gg/bKNWxcq
+> - Join Team Nexus's Discord here: https://discord.gg/bKNWxcq
 >  - Visit the Shotbow Network Site here: https://shotbow.net
