@@ -6,7 +6,7 @@
 
 ## The Code
 
-> The site is meant to be an excersize for Athys (Athysss on GitHub) to test his knowledge on web design and developement. The site will be built using SASS for styling (it will be compiled to CSS) and HTML. The site will be mostly static with a few JavaScript animations.
+> The site is meant to be an exercise for Athys (Athysss on GitHub) to test his knowledge on web design and developement. The site will be built using SASS for styling (it will be compiled to CSS) and HTML. The site will be mostly static with a few JavaScript animations.
 
 ## What's To Come
 
