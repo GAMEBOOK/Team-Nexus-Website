@@ -7,6 +7,21 @@ $accent-color: #ffc107;
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
 $divider-color: #bdbdbd;
+
+@mixin button-main() {
+  .btn-outline-primary {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+  .btn-outline-primary:hover {
+    background: $accent-color;
+    color: $primary-text-color !important;
+    border-color: $accent-color;
+  }
+}
+a {
+  text-decoration: none !important;
+}
 // Begin HTML Styling
 
 // Global CSS
@@ -15,6 +30,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: $primary-text-color;
 }
+@include button-main();
 
 // Navbar CSS
 .bg-dark {
@@ -37,16 +53,37 @@ body {
     text-transform: uppercase;
     font-weight: 300;
   }
-  .btn-outline-primary {
-    border-color: $accent-color;
-  }
-  .btn-outline-primary:hover {
-    background: $accent-color;
-    color: $primary-text-color !important;
-  }
 }
 
 // Hero CSS
+
+#hero {
+  background-color: $primary-color-dark;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  .row {
+    min-height: 100vh;
+  }
+  h1 {
+    font-weight: 300;
+    color: white;
+  }
+  span {
+    color: $accent-color;
+    font-weight: 300;
+  }
+  p {
+    color: white;
+    font-weight: 300;
+  }
+  .btn {
+    margin: 0 5px;
+  }
+}
 
 // About CSS
 
