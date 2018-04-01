@@ -18,6 +18,30 @@ $divider-color: #bdbdbd;
     color: $primary-text-color !important;
     border-color: $accent-color;
   }
+  .btn-outline-primary:active {
+    background: $accent-color !important;
+    border-color: $accent-color !important;
+    color: $primary-text-color !important;
+  }
+}
+
+@mixin button-main-2() {
+  .btn-primary {
+    border-color: $accent-color;
+    background: $accent-color;
+    color: $primary-text-color !important;
+    font-weight: 400 !important;
+  }
+  .btn-primary:hover {
+    background: none;
+    color: $accent-color !important;
+    border-color: $accent-color;
+  }
+  .btn-primary:active {
+    background: $accent-color !important;
+    border-color: $accent-color !important;
+    color: $primary-text-color !important;
+  }
 }
 
 @mixin header() {
@@ -43,6 +67,7 @@ body {
   font-size: 16px;
 }
 @include button-main();
+@include button-main-2();
 
 a {
   text-decoration: none !important;
@@ -54,6 +79,16 @@ hr {
   width: 30%;
   border: 0px;
   margin: 0;
+}
+
+.btn {
+  border-radius: 0px;
+}
+.btn:active {
+  box-shadow: none !important;
+}
+.btn:focus {
+  box-shadow: none !important;
 }
 // Navbar CSS
 .bg-dark {
@@ -72,7 +107,7 @@ hr {
 .nav-item {
   margin: 0 10px;
   .nav-link {
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 300;
   }
@@ -112,7 +147,7 @@ hr {
 
 #about {
   .row {
-    min-height: 45vh;
+    min-height: 450px;
   }
   h1 {
     @include header();
@@ -125,19 +160,36 @@ hr {
 #features {
   background: $primary-color-dark;
   .row {
-    min-height: 35vh;
+    min-height: 450px;
+  }
+  .fa-border {
+    border: 1px solid $accent-color;
+    color: white;
+    transition: background 0.25s, color 0.25s, margin 0.25s;
+    transition-timing-function: ease-in-out;
+    margin-top: 5%;
+    margin: 3% 0;
+    border-radius: 0px;
+  }
+  .fa-border:hover {
+    background: $accent-color;
+    color: $primary-text-color;
+    margin: 5%;
   }
 
   h1 {
+    @include header();
   }
   p {
     color: $primary-color-light;
+    padding: 5%;
+    margin: 3%;
   }
 }
 // Call-to-Action CSS
 #cta {
   .row {
-    min-height: 25vh;
+    min-height: 250px;
   }
 }
 // Footer Css
