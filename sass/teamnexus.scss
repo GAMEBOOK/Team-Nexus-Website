@@ -76,7 +76,7 @@ a {
 hr {
   height: 0.25rem;
   background: $accent-color;
-  width: 30%;
+  width: 175px;
   border: 0px;
   margin: 0;
 }
@@ -89,6 +89,19 @@ hr {
 }
 .btn:focus {
   box-shadow: none !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+body::-webkit-scrollbar-track {
+  background: $primary-color-dark;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $accent-color;
+  outline: 1px solid slategrey;
 }
 // Navbar CSS
 .bg-dark {
@@ -188,8 +201,27 @@ hr {
 }
 // Call-to-Action CSS
 #cta {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba($accent-color, 0.8)
+    ),
+    url("../images/endstone_texture.png");
+  background-position: center;
+  background-attachment: fixed;
   .row {
     min-height: 250px;
+  }
+  h1 {
+    color: white;
+  }
+}
+// Staff CSS
+#staff {
+  .row {
+    min-height: 450px;
+  }
+  h1 {
+    @include header();
   }
 }
 // Footer Css
