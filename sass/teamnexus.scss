@@ -54,6 +54,15 @@ $divider-color: #bdbdbd;
   }
 }
 
+#navbar {
+  button {
+    border-radius: 0px;
+  }
+  button:focus {
+    outline-color: $accent-color;
+    border-radius: 0px;
+  }
+}
 // Begin HTML Styling
 
 // Global CSS
@@ -61,7 +70,7 @@ html,
 body {
   font-family: "Open Sans", sans-serif;
   color: $primary-text-color;
-  position: relative;
+  position: relative !important;
   overflow-x: hidden;
   background: lighten($primary-color-light, 30%);
   font-size: 16px;
@@ -142,7 +151,7 @@ body::-webkit-scrollbar-thumb {
   .row {
     min-height: 100vh;
   }
-  h1 {
+  h1.display-1 {
     font-weight: 300;
     color: white;
   }
@@ -180,17 +189,16 @@ body::-webkit-scrollbar-thumb {
   }
   .fa-border {
     border: 1px solid $accent-color;
-    color: $primary-text-color;
+    color: $primary-color-light;
     transition: background 0.25s, color 0.25s, margin 0.25s;
     transition-timing-function: ease-in-out;
     margin-top: 5%;
     margin: 3% 0;
     border-radius: 0px;
-    background: $accent-color;
   }
   .fa-border:hover {
-    background: transparent;
-    color: $primary-color-light;
+    background: $accent-color;
+    color: $primary-text-color;
     margin: 5%;
   }
 
@@ -216,6 +224,9 @@ body::-webkit-scrollbar-thumb {
     min-height: 450px;
   }
   h1 {
+    color: white;
+  }
+  p.lead {
     color: white;
   }
 }
@@ -258,5 +269,51 @@ body::-webkit-scrollbar-thumb {
     color: $primary-color-light;
     text-align: center;
     font-weight: 400;
+  }
+}
+// Media Queries
+$mobile-width: 768px;
+@media only screen and (max-width: $mobile-width) {
+  // Navbar CSS
+
+  .nav-item {
+    margin: auto;
+  }
+  .navbar {
+    .btn-primary {
+      padding: 10px;
+    }
+  }
+  // Hero CSS
+  #hero {
+    margin: auto;
+
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .mobile {
+      text-align: center;
+    }
+  }
+  // About CSS
+  #about {
+    text-align: center;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  // CTA CSS
+  #cta {
+    text-align: center;
+    iframe {
+    }
+  }
+  // Staff CSS
+  #staff {
+    text-align: center;
   }
 }
