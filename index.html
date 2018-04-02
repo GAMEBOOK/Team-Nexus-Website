@@ -69,13 +69,13 @@
 
   <div id="hero">
     <div class="container-fluid">
-      <div class="row text-left ml-lg-5">
+      <div class="row text-left ml-lg-5 fade">
         <div class="col-12 align-self-center">
           <h1 class="display-1 wow fadeInLeft">Team
             <span class="wow bounceIn" data-wow-delay="1.25s" data-wow-duration="1s" data-wow-duration="2s">Nexus</span>
           </h1>
           <p class="lead wow fadeInDown mt-2 ml-lg-3" data-wow-delay="1.75s" data-wow-duration="2.5s">A community of Annihilation, MineZ, and HCF players.</p>
-          <div class="wow slideInLeft mt-2 ml-lg-2 mt-sm-5 mobile" data-wow-delay="2.25s" data-wow-duration="3s">
+          <div class="wow slideInLeft mt-5 ml-lg-2 mt-sm-5 mobile" data-wow-delay="2.25s" data-wow-duration="3s">
             <a href="https://discord.gg/bKNWxcq" target="_blank">
               <button type="button" class="btn btn-outline-primary">Join today!</button>
             </a>
@@ -108,7 +108,7 @@
           </p>
         </div>
         <div class="col-md-4 d-none d-sm-block align-self-center">
-          <img src="images/endstone.png" alt="Nexus" class="img-fluid mx-auto d-block wow bounceIn">
+          <img src="images/endstone.png" alt="Nexus" class="img-fluid mx-auto d-block wow bounceIn" data-wow-offset="250">
         </div>
       </div>
     </div>
@@ -117,7 +117,7 @@
   <div id="features">
     <div class="container-fluid">
       <div class="row text-center">
-        <div class="col-md-12 col-lg-4 align-self-center wow slideInLeft">
+        <div class="col-md-12 col-lg-4 align-self-center wow slideInLeft" data-wow-offset="250" data-wow-duration="2s">
           <i class="fas fa-trophy fa-5x fa-border"></i>
           <h1>
             <mark>Events</mark>
@@ -126,7 +126,7 @@
             like you. Furthermore, we aren't limited to only Shotbow games as we will schedule play-times on different servers
             and games!</p>
         </div>
-        <div class="col-md-12 col-lg-4 align-self-center wow bounceIn">
+        <div class="col-md-12 col-lg-4 align-self-center wow bounceIn" data-wow-offset="250" data-wow-duration="2s">
           <i class="fab fa-youtube fa-5x fa-border"></i>
           <h1>
             <mark>Grow</mark>
@@ -134,7 +134,7 @@
           <p>Share your YouTube videos, Twitch Livestreams, and other content in our bustling media channel! You can also find
             other media creators to collaborate with and further find enjoyable content from other members within the community.</p>
         </div>
-        <div class="col-md-12 col-lg-4 align-self-center wow slideInRight">
+        <div class="col-md-12 col-lg-4 align-self-center wow slideInRight" data-wow-offset="250" data-wow-duration="2s">
 
           <i class="fas fa-users fa-5x fa-border"></i>
 
@@ -256,6 +256,11 @@
     $('body').scrollspy({ target: '.navbar' })
   </script>
   <script src="js/smoothscroll.js"></script>
+  <script>
+    $(window).scroll(function () {
+      $(".fade").css("opacity", 1 - $(window).scrollTop() / 500);
+    });
+  </script>
 </body>
 
 </html>
