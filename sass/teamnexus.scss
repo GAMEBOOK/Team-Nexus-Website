@@ -152,6 +152,11 @@ a.dropdown-item.selected {
   text-transform: uppercase;
 }
 
+a.dropdown-item:active {
+  background: $accent-color !important;
+  color: $primary-color-text;
+}
+
 // Hero CSS
 
 #hero {
