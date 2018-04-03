@@ -146,6 +146,11 @@ body::-webkit-scrollbar-thumb {
     font-weight: 300;
   }
 }
+a.dropdown-item.selected {
+  background: $accent-color !important;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
 // Hero CSS
 
